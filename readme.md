@@ -1,0 +1,3 @@
+Sydney: BGOE Child Theme
+=======================
+
