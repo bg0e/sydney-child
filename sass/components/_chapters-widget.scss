@@ -1,0 +1,37 @@
+.bgoe-chapters {
+  li {
+    @include remove;
+    &.odd {}
+    &.private {}
+    &.is-admin {}
+    &.is-member {}
+    &.group-has-avatar {}
+    &.group-type-testgrouptype {}
+    &.group-type-chapters {
+      display: block;
+      visibility: visible;
+    }
+  }
+  .item-avatar {
+    display: inline-block;
+    vertical-align: top;
+    a {
+      display: block;
+    }
+    img {}
+  }
+  .item {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+  }
+  .item-title {
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .item-meta {
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .activity {}
+}

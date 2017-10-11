@@ -1,0 +1,15 @@
+@mixin gradient-horizontal-white-transparent {
+  @include gradient-overlay(#fff, 1, #fff, 0, horizontal, 25%, 100%);
+}
+
+@mixin gradient-vertical-white-transparent {
+  @include gradient-overlay(#fff, 1, #fff, 0, vertical, 0%, 100%);
+}
+
+@mixin gradient-horizontal-black-transparent {
+  @include gradient-overlay(#000, 1, #000, 0, horizontal, 25%, 100%);
+}
+
+@mixin gradient-vertical-black-transparent {
+  @include gradient-overlay(#000, 1, #000, 0, vertical, 0%, 100%);
+}

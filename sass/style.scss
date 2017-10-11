@@ -9,3 +9,20 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sydney
 */
+
+//Global Styles
+@import "global/variables";
+
+//Import Mixins
+@import "global/mixins/full-height-columns",
+        "global/mixins/flexbox",
+        "global/mixins/css-columns",
+        "global/mixins/layout",
+        "global/mixins/content",
+        "global/mixins/_icons",
+        "global/mixins/_gradients",
+        "global/mixins/_animations";
+
+//Components
+@import "components/buddypress",
+        "components/chapters-widget";

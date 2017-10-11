@@ -1,0 +1,114 @@
+//Clearfix
+@mixin clearfix {
+  @if support-legacy-browser('ie', '6', '7') {
+    *zoom: 1;
+  }
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+%clearfix {
+  @include clearfix;
+}
+
+
+//Screenreaders Only
+@mixin sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+@mixin sr-only-focusable {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &:focus{
+    position: static !important;
+    clip: auto;
+    overflow: visible;
+    height: auto;
+  }
+}
+
+
+//Hide Element
+@mixin hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+//Show Element
+@mixin show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+//Remove Element
+@mixin remove {
+  visibility: hidden;
+  display: none;
+}
+
+
+//Replace Element
+@mixin replace {
+  visibility: visible;
+  display: initial;
+}
+
+
+//Move Offscreen
+@mixin offscreen {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+//Absolute Positioned horizontal Centering
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+
+//Absolute Positioned Vertical Centering
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  -webkit-transform: translate(0, -50%);
+}
+
+
+//Absolute Positioned Centering
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

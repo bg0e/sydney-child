@@ -9,3 +9,253 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sydney
 */
+/* http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height */
+/* columns of same height styles */
+/* line 56, sass/global/mixins/_full-height-columns.scss */
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 59, sass/global/mixins/_full-height-columns.scss */
+.inside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 62, sass/global/mixins/_full-height-columns.scss */
+.inside-full-height {
+  /*
+  // if you want to give content full height give him height: 100%;
+  // with content full height you can't apply margins to the content
+  // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+  */
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* line 65, sass/global/mixins/_full-height-columns.scss */
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+
+/* line 68, sass/global/mixins/_full-height-columns.scss */
+.col-top {
+  vertical-align: top;
+}
+
+/* line 71, sass/global/mixins/_full-height-columns.scss */
+.col-middle {
+  vertical-align: middle;
+}
+
+/* line 74, sass/global/mixins/_full-height-columns.scss */
+.col-bottom {
+  vertical-align: bottom;
+}
+
+/*USAGE
+@include headings() {
+    color: #000;
+}
+*/
+/*USAGE
+--HTML--
+<div class="some-element">
+    <div class="content"></div>
+</div>
+--SASS--
+.some-element { @include aspect-ratio(16, 9); }
+*/
+/* line 11, sass/components/_buddypress.scss */
+#groups-dir-list #pag-top,
+.groups-list-pagination,
+.bp-group-type-list {
+  visibility: hidden;
+  display: none;
+}
+
+/* line 19, sass/components/_buddypress.scss */
+#buddypress h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 23, sass/components/_buddypress.scss */
+#buddypress h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+/* line 27, sass/components/_buddypress.scss */
+#buddypress h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 31, sass/components/_buddypress.scss */
+#buddypress h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* line 38, sass/components/_buddypress.scss */
+#item-actions {
+  max-width: 50%;
+  width: auto;
+}
+
+/* line 43, sass/components/_buddypress.scss */
+#item-header-cover-image .highlight {
+  visibility: hidden;
+  display: none;
+}
+
+/* line 48, sass/components/_buddypress.scss */
+.login-register {
+  margin-bottom: 30px;
+}
+
+/* line 52, sass/components/_buddypress.scss */
+#groups-list {
+  list-style-type: none;
+  list-style-image: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 40px;
+}
+/* line 266, sass/global/mixins/_content.scss */
+#groups-list ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 274, sass/global/mixins/_content.scss */
+#groups-list li {
+  list-style-type: none;
+}
+/* line 280, sass/global/mixins/_content.scss */
+#groups-list li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 55, sass/components/_buddypress.scss */
+#groups-list li {
+  visibility: hidden;
+  display: none;
+  border-bottom: 1px solid #eaeaea;
+  padding: 30px 0;
+  margin: 0;
+  position: relative;
+}
+/* line 62, sass/components/_buddypress.scss */
+#groups-list li.group-type-chapters {
+  display: block;
+  visibility: visible;
+}
+/* line 67, sass/components/_buddypress.scss */
+#groups-list .item-avatar {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 67, sass/components/_buddypress.scss */
+  #groups-list .item-avatar {
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+}
+/* line 75, sass/components/_buddypress.scss */
+#groups-list .item-avatar a {
+  display: block;
+}
+/* line 78, sass/components/_buddypress.scss */
+#groups-list .item-avatar img {
+  width: 100%;
+}
+/* line 83, sass/components/_buddypress.scss */
+#groups-list .item .item-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 91, sass/components/_buddypress.scss */
+#groups-list .item .item-meta {
+  margin-bottom: 10px;
+}
+/* line 101, sass/components/_buddypress.scss */
+#groups-list .action {
+  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  /* line 101, sass/components/_buddypress.scss */
+  #groups-list .action {
+    text-align: center;
+  }
+}
+/* line 107, sass/components/_buddypress.scss */
+#groups-list .action .leave-group,
+#groups-list .action .request-membership {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #767676;
+  font-size: small;
+  cursor: pointer;
+  outline: 0;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 118, sass/components/_buddypress.scss */
+#groups-list .action .leave-group:hover,
+#groups-list .action .request-membership:hover {
+  background-color: #d65050;
+  color: #fff;
+}
+
+/* line 2, sass/components/_chapters-widget.scss */
+.bgoe-chapters li {
+  visibility: hidden;
+  display: none;
+}
+/* line 10, sass/components/_chapters-widget.scss */
+.bgoe-chapters li.group-type-chapters {
+  display: block;
+  visibility: visible;
+}
+/* line 15, sass/components/_chapters-widget.scss */
+.bgoe-chapters .item-avatar {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 18, sass/components/_chapters-widget.scss */
+.bgoe-chapters .item-avatar a {
+  display: block;
+}
+/* line 23, sass/components/_chapters-widget.scss */
+.bgoe-chapters .item {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+}
+/* line 28, sass/components/_chapters-widget.scss */
+.bgoe-chapters .item-title {
+  line-height: 1;
+  margin-bottom: 5px;
+}
+/* line 32, sass/components/_chapters-widget.scss */
+.bgoe-chapters .item-meta {
+  line-height: 1;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,124 @@
+//Hide groups links
+#groups-personal-li,
+#activity-groups-personal-li {
+  //@include remove;
+}
+
+#group-create-nav {
+  //@include remove;
+}
+
+#groups-dir-list #pag-top,
+.groups-list-pagination,
+.bp-group-type-list {
+  @include remove;
+}
+
+//Headings
+#buddypress {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+//Chapters Pages
+#item-actions {
+  max-width: 50%;
+  width: auto;
+}
+
+#item-header-cover-image .highlight {
+  @include remove;
+}
+
+//Chapters list
+.login-register {
+  margin-bottom: 30px;
+}
+
+#groups-list {
+  @include no-bullets;
+  margin-bottom: 40px;
+   li {
+     @include remove;
+     border-bottom: 1px solid #eaeaea;
+     padding: 30px 0;
+     margin: 0;
+     position: relative;
+     &.group-type-testgrouptype {}
+     &.group-type-chapters {
+       display: block;
+       visibility: visible;
+     }
+   }
+  .item-avatar {
+    //float: left;
+    //margin-right: 15px;
+    margin-bottom: 20px;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+      padding-right: 0;
+    }
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .item {
+    .item-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-weight: bold;
+      a {}
+    }
+    .item-meta {
+      margin-bottom: 10px;
+    }
+    .item-desc {
+      p {}
+    }
+    .activity-meta {
+      .activity {}
+    }
+  }
+  .action {
+    text-align: right;
+    @media only screen and (min-width: 768px) {
+      text-align: center;
+    }
+    .generic-button {}
+    .leave-group,
+    .request-membership {
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #767676;
+      font-size: small;
+      cursor: pointer;
+      outline: 0;
+      padding: 4px 10px;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        background-color: #d65050;
+        color: #fff;
+      }
+    }
+  }
+}
