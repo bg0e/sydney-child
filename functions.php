@@ -19,7 +19,15 @@ function sydney_child_enqueue() {
 /* ADD YOUR CUSTOM FUNCTIONS BELOW */
 
 // Update CSS within in Admin
-function admin_style() {
-    wp_enqueue_style('admin-styles', get_template_directory_uri().'/admin.css');
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+    echo '<style>
+    #woocommerce-coupon-data .wc-metaboxes-wrapper,
+    #woocommerce-coupon-data .woocommerce_options_panel,
+    #woocommerce-product-data .wc-metaboxes-wrapper,
+    #woocommerce-product-data .woocommerce_options_panel {
+      margin: 0;
+    } 
+  </style>';
 }
-add_action('admin_enqueue_scripts', 'admin_style');
