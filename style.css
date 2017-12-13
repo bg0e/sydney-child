@@ -264,11 +264,3 @@ Text Domain: sydney
 body {
   padding-top: 118px;
 }
-
-/* line 5, sass/components/_global.scss */
-#woocommerce-coupon-data .wc-metaboxes-wrapper,
-#woocommerce-coupon-data .woocommerce_options_panel,
-#woocommerce-product-data .wc-metaboxes-wrapper,
-#woocommerce-product-data .woocommerce_options_panel {
-  margin: 0;
-}
