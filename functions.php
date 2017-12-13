@@ -28,6 +28,8 @@ function my_custom_fonts() {
     #woocommerce-product-data .wc-metaboxes-wrapper,
     #woocommerce-product-data .woocommerce_options_panel {
       margin: 0;
+      max-height: none;
+      padding: 0;
     } 
   </style>';
 }
